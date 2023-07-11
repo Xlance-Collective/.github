@@ -2,22 +2,88 @@
 
 The project follows a recommended folder structure for a Flutter application, promoting modularity, readability, and maintainability.
 ```bash
+└── ├──
 ├── lib
+|   ├── auth  (module)
+|   |     ├── model
+|   |     |     └── user.dart
+|   |     ├── controller
+|   |     |     └── auth_controller.dart
+|   |     ├── view
+|   |     |     ├── log_in_screen.dart
+|   |     |     ├── sign_up_screen.dart
+|   |     |     └── account_screen.dart
+|   |     └── helper
+|   |           ├── auth_mixin.dart
+|   |           └── user_role_enum.dart 
+|   |
+|   ├── controller
+|   |     └── setting_controller.dart
+|   |
+|   ├── service
+|   |     ├── push_notification_service.dart
+|   |     ├── excel_service.dart
+|   |     ├── printer_service.dart
+|   |     └── payment_service.dart
+|   |
+|   ├── view
+|   |     ├── components
+|   |     |      ├── loading_widget.dart
+|   |     |      └── text_input_widget.dart
+|   |     | 
+|   |     ├── main_screen.dart
+|   |     ├── splash_screen.dart
+|   |     └── setting_screen.dart
+|   | 
+│   ├── utils
+|   |     ├── constants.dart
+|   |     ├── assets.dart
+|   |     ├── themes.dart
+|   |     ├── colors.dart
+|   |     └── general_function.dart
+|   |
+|   |
+|   ├── modules
+|   |     ├── product
+|   |     |       ├── model
+|   |     |       |      ├── product.dart
+|   |     |       |      └── cart_item.dart
+|   |     |       ├── controller
+|   |     |       |      ├── product_controller.dart ( Change Notifider or GetxController with ProductMixin )
+|   |     |       |      └── cart_controller.dart
+|   |     |       ├── helper
+|   |     |       |      ├── product_mixin.dart
+|   |     |       |      ├── product_type_enums.dart
+|   |     |       |      └── date_formatter.dart
+|   |     |       └── view
+|   |     |              ├── components
+|   |     |              |     ├── product_card_widget.dart
+|   |     |              |     └── category_bar.dart
+|   |     |              ├── product_landing_screen.dart
+|   |     |              ├── product_detail_screen.dart
+|   |     |              └── cart_screen.dart
+|   |     └── order
+|   |             ├── model
+|   |             |      ├── order.dart
+|   |             |      └── order_history.dart
+|   |             ├── controller
+|   |             |      ├── order_controller.dart ( Change Notifider or GetxController with OrderMixin )
+|   |             |      └── history_controller.dart
+|   |             ├── helper
+|   |             |      ├── order_mixin.dart
+|   |             |      ├── order_status_enums.dart
+|   |             |      └── order_price_input_formatter.dart
+|   |             └── view
+|   |                    ├── components
+|   |                    |     ├── order_card_widget.dart
+|   |                    |     └── payment_dialog.dart
+|   |                    ├── order_submit_screen.dart
+|   |                    ├── order_detail_screen.dart
+|   |                    └── order_history_screen.dart
+|   |            
 │   ├── main.dart
-│   ├── src
-│   │   ├── models
-│   │   ├── services
-│   │   ├── utils
-│   │   ├── views
-│   │   │   ├── screens(parent-screens)
-│   │   │   │   ├── screen_providers
-│   │   │   │   ├── screen_controllers
-│   │   │   │   └── widgets
-│   │   │   └── widgets(global-widgets)
-│   │   ├── controllers ( business logic + functional controller )
-│   │   ├── providers
-│   │   └── repositories
-│   ├── routes
+|   └── app.dart
+|
 ├── android
 ├── ios
 ├── assets
