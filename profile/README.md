@@ -2,7 +2,6 @@
 
 The project follows a recommended folder structure for a Flutter application, promoting modularity, readability, and maintainability.
 ```bash
-└── ├──
 ├── lib
 |   ├── auth  (module)
 |   |     ├── model
