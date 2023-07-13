@@ -1,3 +1,7 @@
+## Package/Bundle name Structure
+Android : com.xlance.<appname>
+iOS     : com.xlance.<appname>
+
 ## Folder Structure
 
 The project follows a recommended folder structure for a Flutter application, promoting modularity, readability, and maintainability.
