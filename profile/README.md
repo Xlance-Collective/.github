@@ -1,6 +1,6 @@
 ## Package/Bundle name Structure
-Android : com.xlance.<appname>
-iOS     : com.xlance.<appname>
+Android : com.xlance.(<appname>)
+iOS     : com.xlance.(<appname>)
 
 ## Folder Structure
 
